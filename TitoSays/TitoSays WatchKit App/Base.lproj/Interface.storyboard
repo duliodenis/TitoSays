@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Tito Says Menu Interface Controller-->
+        <!--Tito Says-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="TitoSaysMenuInterfaceController">
+                <controller identifier="TitoSaysMenuInterfaceController" title="Tito Says" id="AgC-eL-Hgc" customClass="TitoSaysMenuInterfaceController">
                     <items>
                         <button width="1" alignment="left" title="Start Tito" id="9Ri-re-OOI">
                             <connections>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
-        <!--Tito Says Game Interface Controller-->
+        <!--Tito-->
         <scene sceneID="d5Z-55-YFE">
             <objects>
-                <controller id="lwv-dj-Mra" customClass="TitoSaysGameInterfaceController">
+                <controller identifier="TitoSaysGameInterfaceController" title="Tito" id="lwv-dj-Mra" customClass="TitoSaysGameInterfaceController">
                     <items>
                         <group width="1" alignment="left" id="Wiq-7O-Xcj">
                             <items>

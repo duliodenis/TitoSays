@@ -33,7 +33,7 @@
 }
 
 - (IBAction)startGame {
-    
+    [self pushControllerWithName:@"TitoSaysGameInterfaceController" context:self];
 }
 
 @end
