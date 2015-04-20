@@ -23,6 +23,7 @@
 		6CF0BE091AE54D87007094F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BE081AE54D87007094F8 /* Images.xcassets */; };
 		6CF0BE0C1AE54D87007094F8 /* TitoSays WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CF0BE161AE592A9007094F8 /* TitoSaysMenuInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */; };
+		6CF0BE1A1AE597A4007094F8 /* TitoSaysGameInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BE191AE597A4007094F8 /* TitoSaysGameInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		6CF0BE081AE54D87007094F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CF0BE141AE592A9007094F8 /* TitoSaysMenuInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitoSaysMenuInterfaceController.h; path = ViewControllers/TitoSaysMenuInterfaceController.h; sourceTree = "<group>"; };
 		6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitoSaysMenuInterfaceController.m; path = ViewControllers/TitoSaysMenuInterfaceController.m; sourceTree = "<group>"; };
+		6CF0BE181AE597A4007094F8 /* TitoSaysGameInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitoSaysGameInterfaceController.h; path = ViewControllers/TitoSaysGameInterfaceController.h; sourceTree = "<group>"; };
+		6CF0BE191AE597A4007094F8 /* TitoSaysGameInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitoSaysGameInterfaceController.m; path = ViewControllers/TitoSaysGameInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 			children = (
 				6CF0BE141AE592A9007094F8 /* TitoSaysMenuInterfaceController.h */,
 				6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */,
+				6CF0BE181AE597A4007094F8 /* TitoSaysGameInterfaceController.h */,
+				6CF0BE191AE597A4007094F8 /* TitoSaysGameInterfaceController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				6CF0BDF61AE54D87007094F8 /* NotificationController.m in Sources */,
 				6CF0BDF31AE54D87007094F8 /* InterfaceController.m in Sources */,
 				6CF0BE161AE592A9007094F8 /* TitoSaysMenuInterfaceController.m in Sources */,
+				6CF0BE1A1AE597A4007094F8 /* TitoSaysGameInterfaceController.m in Sources */,
 				6CF0BDF91AE54D87007094F8 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

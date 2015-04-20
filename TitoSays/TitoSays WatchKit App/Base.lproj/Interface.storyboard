@@ -27,6 +27,56 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
+        <!--Tito Says Game Interface Controller-->
+        <scene sceneID="d5Z-55-YFE">
+            <objects>
+                <controller id="lwv-dj-Mra" customClass="TitoSaysGameInterfaceController">
+                    <items>
+                        <group width="1" alignment="left" id="Wiq-7O-Xcj">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" id="wBl-Pl-mwc">
+                                    <color key="backgroundColor" red="0.25882352941176473" green="0.63921568627450975" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="upperLeftTapped" destination="lwv-dj-Mra" id="a6z-i3-Hd6"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" id="Seh-gY-o7x">
+                                    <color key="backgroundColor" red="0.92549019610000005" green="0.19215686269999999" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="upperRightTapped" destination="lwv-dj-Mra" id="DTk-AM-lxa"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="IT3-Aj-vjA">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" id="8rU-Jw-Tsg">
+                                    <color key="backgroundColor" red="0.96862745098039216" green="0.78823529411764703" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="lowerLeftTapped" destination="lwv-dj-Mra" id="TXM-0N-NrT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" id="A6d-OL-7Om">
+                                    <color key="backgroundColor" red="0.5490196078431373" green="0.792156862745098" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="lowerRightTapped" destination="lwv-dj-Mra" id="Ajl-Bc-Dsu"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Starting Game" textAlignment="center" id="4jY-CC-UHA"/>
+                    </items>
+                    <connections>
+                        <outlet property="lowerLeftButton" destination="8rU-Jw-Tsg" id="Rvc-2g-1GJ"/>
+                        <outlet property="lowerRightButton" destination="A6d-OL-7Om" id="ZLB-TJ-EQH"/>
+                        <outlet property="notificationLabel" destination="4jY-CC-UHA" id="RHl-Jh-jPO"/>
+                        <outlet property="upperLeftButton" destination="wBl-Pl-mwc" id="ojB-oj-lKR"/>
+                        <outlet property="upperRightButton" destination="Seh-gY-o7x" id="2kM-wT-vKz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="347"/>
+        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
