@@ -22,6 +22,7 @@
 		6CF0BE071AE54D87007094F8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BE051AE54D87007094F8 /* Interface.storyboard */; };
 		6CF0BE091AE54D87007094F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BE081AE54D87007094F8 /* Images.xcassets */; };
 		6CF0BE0C1AE54D87007094F8 /* TitoSays WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CF0BE161AE592A9007094F8 /* TitoSaysMenuInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		6CF0BE041AE54D87007094F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CF0BE061AE54D87007094F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6CF0BE081AE54D87007094F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CF0BE141AE592A9007094F8 /* TitoSaysMenuInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitoSaysMenuInterfaceController.h; path = ViewControllers/TitoSaysMenuInterfaceController.h; sourceTree = "<group>"; };
+		6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitoSaysMenuInterfaceController.m; path = ViewControllers/TitoSaysMenuInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,7 @@
 		6CF0BDED1AE54D87007094F8 /* TitoSays WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6CF0BE171AE592B0007094F8 /* ViewControllers */,
 				6CF0BDF11AE54D87007094F8 /* InterfaceController.h */,
 				6CF0BDF21AE54D87007094F8 /* InterfaceController.m */,
 				6CF0BDF41AE54D87007094F8 /* NotificationController.h */,
@@ -220,6 +224,15 @@
 				6CF0BE041AE54D87007094F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CF0BE171AE592B0007094F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BE141AE592A9007094F8 /* TitoSaysMenuInterfaceController.h */,
+				6CF0BE151AE592A9007094F8 /* TitoSaysMenuInterfaceController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +416,7 @@
 			files = (
 				6CF0BDF61AE54D87007094F8 /* NotificationController.m in Sources */,
 				6CF0BDF31AE54D87007094F8 /* InterfaceController.m in Sources */,
+				6CF0BE161AE592A9007094F8 /* TitoSaysMenuInterfaceController.m in Sources */,
 				6CF0BDF91AE54D87007094F8 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +678,7 @@
 				6CF0BDE41AE54D25007094F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CF0BDE51AE54D25007094F8 /* Build configuration list for PBXNativeTarget "TitoSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -672,6 +687,7 @@
 				6CF0BDE71AE54D25007094F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CF0BE0D1AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -680,6 +696,7 @@
 				6CF0BE0F1AE54D87007094F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CF0BE101AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +705,7 @@
 				6CF0BE121AE54D87007094F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

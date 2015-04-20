@@ -5,15 +5,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Tito Says Menu Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller id="AgC-eL-Hgc" customClass="TitoSaysMenuInterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Start Tito" id="9Ri-re-OOI"/>
+                        <button width="1" alignment="left" title="Start Tito" id="9Ri-re-OOI">
+                            <connections>
+                                <action selector="startGame" destination="AgC-eL-Hgc" id="Pv9-xa-ry8"/>
+                            </connections>
+                        </button>
                         <label width="1" height="32" alignment="left" text="Tito's Done" textAlignment="center" id="3T6-iG-1sI"/>
                         <label width="1" height="32" alignment="left" text="Score: 999" textAlignment="center" id="dhn-pq-o0c"/>
                     </items>
+                    <connections>
+                        <outlet property="gameOverLabel" destination="3T6-iG-1sI" id="b7O-6e-rf7"/>
+                        <outlet property="scoreLabel" destination="dhn-pq-o0c" id="OeT-Xc-dvp"/>
+                        <outlet property="startGameButton" destination="9Ri-re-OOI" id="cxR-sz-ilY"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
