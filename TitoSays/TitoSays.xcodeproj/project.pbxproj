@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CF0BDC51AE54D25007094F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDC41AE54D25007094F8 /* main.m */; };
+		6CF0BDC81AE54D25007094F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDC71AE54D25007094F8 /* AppDelegate.m */; };
+		6CF0BDCB1AE54D25007094F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDCA1AE54D25007094F8 /* ViewController.m */; };
+		6CF0BDCE1AE54D25007094F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BDCC1AE54D25007094F8 /* Main.storyboard */; };
+		6CF0BDD01AE54D25007094F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BDCF1AE54D25007094F8 /* Images.xcassets */; };
+		6CF0BDD31AE54D25007094F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BDD11AE54D25007094F8 /* LaunchScreen.xib */; };
+		6CF0BDDF1AE54D25007094F8 /* TitoSaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDDE1AE54D25007094F8 /* TitoSaysTests.m */; };
+		6CF0BDF31AE54D87007094F8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDF21AE54D87007094F8 /* InterfaceController.m */; };
+		6CF0BDF61AE54D87007094F8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDF51AE54D87007094F8 /* NotificationController.m */; };
+		6CF0BDF91AE54D87007094F8 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0BDF81AE54D87007094F8 /* GlanceController.m */; };
+		6CF0BDFB1AE54D87007094F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BDFA1AE54D87007094F8 /* Images.xcassets */; };
+		6CF0BDFF1AE54D87007094F8 /* TitoSays WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BDFE1AE54D87007094F8 /* TitoSays WatchKit App.app */; };
+		6CF0BE071AE54D87007094F8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BE051AE54D87007094F8 /* Interface.storyboard */; };
+		6CF0BE091AE54D87007094F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0BE081AE54D87007094F8 /* Images.xcassets */; };
+		6CF0BE0C1AE54D87007094F8 /* TitoSays WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CF0BDD91AE54D25007094F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF0BDB71AE54D24007094F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF0BDBE1AE54D25007094F8;
+			remoteInfo = TitoSays;
+		};
+		6CF0BE001AE54D87007094F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF0BDB71AE54D24007094F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF0BDFD1AE54D87007094F8;
+			remoteInfo = "TitoSays WatchKit App";
+		};
+		6CF0BE0A1AE54D87007094F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF0BDB71AE54D24007094F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF0BDEB1AE54D87007094F8;
+			remoteInfo = "TitoSays WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CF0BE131AE54D87007094F8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CF0BE0C1AE54D87007094F8 /* TitoSays WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6CF0BDBF1AE54D25007094F8 /* TitoSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TitoSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0BDC31AE54D25007094F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0BDC41AE54D25007094F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CF0BDC61AE54D25007094F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CF0BDC71AE54D25007094F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CF0BDC91AE54D25007094F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CF0BDCA1AE54D25007094F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CF0BDCD1AE54D25007094F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CF0BDCF1AE54D25007094F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CF0BDD21AE54D25007094F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6CF0BDD81AE54D25007094F8 /* TitoSaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitoSaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0BDDD1AE54D25007094F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0BDDE1AE54D25007094F8 /* TitoSaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitoSaysTests.m; sourceTree = "<group>"; };
+		6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TitoSays WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0BDEF1AE54D87007094F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0BDF01AE54D87007094F8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6CF0BDF11AE54D87007094F8 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		6CF0BDF21AE54D87007094F8 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		6CF0BDF41AE54D87007094F8 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		6CF0BDF51AE54D87007094F8 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		6CF0BDF71AE54D87007094F8 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		6CF0BDF81AE54D87007094F8 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		6CF0BDFA1AE54D87007094F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CF0BDFE1AE54D87007094F8 /* TitoSays WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TitoSays WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0BE041AE54D87007094F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0BE061AE54D87007094F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6CF0BE081AE54D87007094F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CF0BDBC1AE54D25007094F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDD51AE54D25007094F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDE91AE54D87007094F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CF0BDB61AE54D24007094F8 = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDC11AE54D25007094F8 /* TitoSays */,
+				6CF0BDDB1AE54D25007094F8 /* TitoSaysTests */,
+				6CF0BDED1AE54D87007094F8 /* TitoSays WatchKit Extension */,
+				6CF0BE021AE54D87007094F8 /* TitoSays WatchKit App */,
+				6CF0BDC01AE54D25007094F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CF0BDC01AE54D25007094F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDBF1AE54D25007094F8 /* TitoSays.app */,
+				6CF0BDD81AE54D25007094F8 /* TitoSaysTests.xctest */,
+				6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */,
+				6CF0BDFE1AE54D87007094F8 /* TitoSays WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CF0BDC11AE54D25007094F8 /* TitoSays */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDC61AE54D25007094F8 /* AppDelegate.h */,
+				6CF0BDC71AE54D25007094F8 /* AppDelegate.m */,
+				6CF0BDC91AE54D25007094F8 /* ViewController.h */,
+				6CF0BDCA1AE54D25007094F8 /* ViewController.m */,
+				6CF0BDCC1AE54D25007094F8 /* Main.storyboard */,
+				6CF0BDCF1AE54D25007094F8 /* Images.xcassets */,
+				6CF0BDD11AE54D25007094F8 /* LaunchScreen.xib */,
+				6CF0BDC21AE54D25007094F8 /* Supporting Files */,
+			);
+			path = TitoSays;
+			sourceTree = "<group>";
+		};
+		6CF0BDC21AE54D25007094F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDC31AE54D25007094F8 /* Info.plist */,
+				6CF0BDC41AE54D25007094F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CF0BDDB1AE54D25007094F8 /* TitoSaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDDE1AE54D25007094F8 /* TitoSaysTests.m */,
+				6CF0BDDC1AE54D25007094F8 /* Supporting Files */,
+			);
+			path = TitoSaysTests;
+			sourceTree = "<group>";
+		};
+		6CF0BDDC1AE54D25007094F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDDD1AE54D25007094F8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CF0BDED1AE54D87007094F8 /* TitoSays WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDF11AE54D87007094F8 /* InterfaceController.h */,
+				6CF0BDF21AE54D87007094F8 /* InterfaceController.m */,
+				6CF0BDF41AE54D87007094F8 /* NotificationController.h */,
+				6CF0BDF51AE54D87007094F8 /* NotificationController.m */,
+				6CF0BDF71AE54D87007094F8 /* GlanceController.h */,
+				6CF0BDF81AE54D87007094F8 /* GlanceController.m */,
+				6CF0BDFA1AE54D87007094F8 /* Images.xcassets */,
+				6CF0BDEE1AE54D87007094F8 /* Supporting Files */,
+			);
+			path = "TitoSays WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6CF0BDEE1AE54D87007094F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BDEF1AE54D87007094F8 /* Info.plist */,
+				6CF0BDF01AE54D87007094F8 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CF0BE021AE54D87007094F8 /* TitoSays WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BE051AE54D87007094F8 /* Interface.storyboard */,
+				6CF0BE081AE54D87007094F8 /* Images.xcassets */,
+				6CF0BE031AE54D87007094F8 /* Supporting Files */,
+			);
+			path = "TitoSays WatchKit App";
+			sourceTree = "<group>";
+		};
+		6CF0BE031AE54D87007094F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0BE041AE54D87007094F8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CF0BDBE1AE54D25007094F8 /* TitoSays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0BDE21AE54D25007094F8 /* Build configuration list for PBXNativeTarget "TitoSays" */;
+			buildPhases = (
+				6CF0BDBB1AE54D25007094F8 /* Sources */,
+				6CF0BDBC1AE54D25007094F8 /* Frameworks */,
+				6CF0BDBD1AE54D25007094F8 /* Resources */,
+				6CF0BE131AE54D87007094F8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CF0BE0B1AE54D87007094F8 /* PBXTargetDependency */,
+			);
+			name = TitoSays;
+			productName = TitoSays;
+			productReference = 6CF0BDBF1AE54D25007094F8 /* TitoSays.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CF0BDD71AE54D25007094F8 /* TitoSaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0BDE51AE54D25007094F8 /* Build configuration list for PBXNativeTarget "TitoSaysTests" */;
+			buildPhases = (
+				6CF0BDD41AE54D25007094F8 /* Sources */,
+				6CF0BDD51AE54D25007094F8 /* Frameworks */,
+				6CF0BDD61AE54D25007094F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CF0BDDA1AE54D25007094F8 /* PBXTargetDependency */,
+			);
+			name = TitoSaysTests;
+			productName = TitoSaysTests;
+			productReference = 6CF0BDD81AE54D25007094F8 /* TitoSaysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CF0BDEB1AE54D87007094F8 /* TitoSays WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0BE101AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit Extension" */;
+			buildPhases = (
+				6CF0BDE81AE54D87007094F8 /* Sources */,
+				6CF0BDE91AE54D87007094F8 /* Frameworks */,
+				6CF0BDEA1AE54D87007094F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CF0BE011AE54D87007094F8 /* PBXTargetDependency */,
+			);
+			name = "TitoSays WatchKit Extension";
+			productName = "TitoSays WatchKit Extension";
+			productReference = 6CF0BDEC1AE54D87007094F8 /* TitoSays WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		6CF0BDFD1AE54D87007094F8 /* TitoSays WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0BE0D1AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit App" */;
+			buildPhases = (
+				6CF0BDFC1AE54D87007094F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TitoSays WatchKit App";
+			productName = "TitoSays WatchKit App";
+			productReference = 6CF0BDFE1AE54D87007094F8 /* TitoSays WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CF0BDB71AE54D24007094F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Dulio Denis";
+				TargetAttributes = {
+					6CF0BDBE1AE54D25007094F8 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6CF0BDD71AE54D25007094F8 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 6CF0BDBE1AE54D25007094F8;
+					};
+					6CF0BDEB1AE54D87007094F8 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6CF0BDFD1AE54D87007094F8 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 6CF0BDBA1AE54D24007094F8 /* Build configuration list for PBXProject "TitoSays" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CF0BDB61AE54D24007094F8;
+			productRefGroup = 6CF0BDC01AE54D25007094F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CF0BDBE1AE54D25007094F8 /* TitoSays */,
+				6CF0BDD71AE54D25007094F8 /* TitoSaysTests */,
+				6CF0BDEB1AE54D87007094F8 /* TitoSays WatchKit Extension */,
+				6CF0BDFD1AE54D87007094F8 /* TitoSays WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CF0BDBD1AE54D25007094F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BDCE1AE54D25007094F8 /* Main.storyboard in Resources */,
+				6CF0BDD31AE54D25007094F8 /* LaunchScreen.xib in Resources */,
+				6CF0BDD01AE54D25007094F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDD61AE54D25007094F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDEA1AE54D87007094F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BDFF1AE54D87007094F8 /* TitoSays WatchKit App.app in Resources */,
+				6CF0BDFB1AE54D87007094F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDFC1AE54D87007094F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BE071AE54D87007094F8 /* Interface.storyboard in Resources */,
+				6CF0BE091AE54D87007094F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CF0BDBB1AE54D25007094F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BDCB1AE54D25007094F8 /* ViewController.m in Sources */,
+				6CF0BDC81AE54D25007094F8 /* AppDelegate.m in Sources */,
+				6CF0BDC51AE54D25007094F8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDD41AE54D25007094F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BDDF1AE54D25007094F8 /* TitoSaysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0BDE81AE54D87007094F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0BDF61AE54D87007094F8 /* NotificationController.m in Sources */,
+				6CF0BDF31AE54D87007094F8 /* InterfaceController.m in Sources */,
+				6CF0BDF91AE54D87007094F8 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CF0BDDA1AE54D25007094F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF0BDBE1AE54D25007094F8 /* TitoSays */;
+			targetProxy = 6CF0BDD91AE54D25007094F8 /* PBXContainerItemProxy */;
+		};
+		6CF0BE011AE54D87007094F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF0BDFD1AE54D87007094F8 /* TitoSays WatchKit App */;
+			targetProxy = 6CF0BE001AE54D87007094F8 /* PBXContainerItemProxy */;
+		};
+		6CF0BE0B1AE54D87007094F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF0BDEB1AE54D87007094F8 /* TitoSays WatchKit Extension */;
+			targetProxy = 6CF0BE0A1AE54D87007094F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CF0BDCC1AE54D25007094F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF0BDCD1AE54D25007094F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CF0BDD11AE54D25007094F8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF0BDD21AE54D25007094F8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6CF0BE051AE54D87007094F8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF0BE061AE54D87007094F8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CF0BDE01AE54D25007094F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6CF0BDE11AE54D25007094F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CF0BDE31AE54D25007094F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TitoSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CF0BDE41AE54D25007094F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TitoSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CF0BDE61AE54D25007094F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TitoSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TitoSays.app/TitoSays";
+			};
+			name = Debug;
+		};
+		6CF0BDE71AE54D25007094F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TitoSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TitoSays.app/TitoSays";
+			};
+			name = Release;
+		};
+		6CF0BE0E1AE54D87007094F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TitoSays_WatchKit_Extension;
+				INFOPLIST_FILE = "TitoSays WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		6CF0BE0F1AE54D87007094F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TitoSays_WatchKit_Extension;
+				INFOPLIST_FILE = "TitoSays WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		6CF0BE111AE54D87007094F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TitoSays WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6CF0BE121AE54D87007094F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TitoSays WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CF0BDBA1AE54D24007094F8 /* Build configuration list for PBXProject "TitoSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0BDE01AE54D25007094F8 /* Debug */,
+				6CF0BDE11AE54D25007094F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF0BDE21AE54D25007094F8 /* Build configuration list for PBXNativeTarget "TitoSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0BDE31AE54D25007094F8 /* Debug */,
+				6CF0BDE41AE54D25007094F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CF0BDE51AE54D25007094F8 /* Build configuration list for PBXNativeTarget "TitoSaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0BDE61AE54D25007094F8 /* Debug */,
+				6CF0BDE71AE54D25007094F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CF0BE0D1AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0BE0E1AE54D87007094F8 /* Debug */,
+				6CF0BE0F1AE54D87007094F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CF0BE101AE54D87007094F8 /* Build configuration list for PBXNativeTarget "TitoSays WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0BE111AE54D87007094F8 /* Debug */,
+				6CF0BE121AE54D87007094F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CF0BDB71AE54D24007094F8 /* Project object */;
+}
