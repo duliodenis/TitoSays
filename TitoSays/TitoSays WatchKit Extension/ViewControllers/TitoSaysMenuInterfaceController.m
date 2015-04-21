@@ -12,9 +12,12 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *startGameButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *gameOverLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *scoreLabel;
+@property (nonatomic) NSArray *currentGameSequence;
 @end
 
 @implementation TitoSaysMenuInterfaceController
+
+const static int kGameTurnCount = 1000;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -25,6 +28,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    self.currentGameSequence = [self generateNewGameSequence];
 }
 
 - (void)didDeactivate {
@@ -34,6 +38,20 @@
 
 - (IBAction)startGame {
     [self pushControllerWithName:@"TitoSaysGameInterfaceController" context:self];
+}
+
+
+#pragma mark - Game Sequence 
+
+- (NSArray *)generateNewGameSequence {
+    NSMutableArray *newSequence = [NSMutableArray array];
+    
+    for (int i=0; i < kGameTurnCount; i++) {
+        int randomNumber = arc4random() % 4;
+        [newSequence addObject:[NSNumber numberWithInt:randomNumber]];
+    }
+    
+    return newSequence;
 }
 
 @end
