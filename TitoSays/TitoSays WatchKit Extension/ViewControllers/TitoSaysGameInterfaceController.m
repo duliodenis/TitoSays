@@ -14,9 +14,17 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *lowerLeftButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *lowerRightButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *notificationLabel;
+@property (nonatomic) NSArray *currentGameSequence;
 @end
 
 @implementation TitoSaysGameInterfaceController
+
+
+// Game Sequence Turn Count Constant
+const static int kGameTurnCount = 1000;
+
+
+#pragma mark - Interface Lifecycle
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -27,6 +35,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    self.currentGameSequence = [self generateNewGameSequence];
 }
 
 - (void)didDeactivate {
@@ -47,6 +56,42 @@
 }
 
 - (IBAction)lowerRightTapped {
+}
+
+
+#pragma mark - Game Sequence
+
+- (NSArray *)generateNewGameSequence {
+    NSMutableArray *newSequence = [NSMutableArray array];
+    
+    for (int i=0; i < kGameTurnCount; i++) {
+        int randomNumber = arc4random() % 4;
+        [newSequence addObject:[NSNumber numberWithInt:randomNumber]];
+    }
+    
+    return newSequence;
+}
+
+
+- (NSArray *)gameButtons {
+    return @[self.upperLeftButton, self.upperRightButton, self.lowerLeftButton, self.lowerRightButton];
+}
+
+
+- (NSArray *)quadrantColors {
+    return @[[UIColor greenColor], [UIColor redColor], [UIColor blueColor], [UIColor yellowColor]];
+}
+
+
+- (NSArray *)quadrantFlashColors {
+    NSMutableArray *flashColors = [NSMutableArray array];
+    
+    for (int i=0; i < [[self quadrantColors] count]; i++) {
+        UIColor *flashColor = [[self quadrantColors][i] colorWithAlphaComponent:0.1f];
+        [flashColors addObject:flashColor];
+    }
+    
+    return flashColors;
 }
 
 @end
