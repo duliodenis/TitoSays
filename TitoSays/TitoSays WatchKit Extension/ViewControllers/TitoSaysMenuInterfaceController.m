@@ -7,11 +7,13 @@
 //
 
 #import "TitoSaysMenuInterfaceController.h"
+#import "TitoSaysGameInterfaceController.h"
 
-@interface TitoSaysMenuInterfaceController ()
+@interface TitoSaysMenuInterfaceController () <TitoSaysGameDelegate>
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *startGameButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *gameOverLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *scoreLabel;
+@property (nonatomic) NSNumber *score;
 @end
 
 @implementation TitoSaysMenuInterfaceController
@@ -25,6 +27,14 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    if (self.score) {
+        [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %@", self.score]];
+        [self.scoreLabel setHidden:NO];
+        [self.gameOverLabel setHidden:NO];
+    } else {
+        [self.gameOverLabel setHidden:YES];
+        [self.scoreLabel setHidden:YES];
+    }
 }
 
 - (void)didDeactivate {
@@ -34,6 +44,13 @@
 
 - (IBAction)startGame {
     [self pushControllerWithName:@"TitoSaysGameInterfaceController" context:self];
+}
+
+
+#pragma mark - TitoSays Game Delegate Methods
+
+- (void)didEndGameWithScore:(NSUInteger)score {
+    self.score = @(score);
 }
 
 @end

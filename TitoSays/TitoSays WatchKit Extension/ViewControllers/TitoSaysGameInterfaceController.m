@@ -18,20 +18,22 @@
 @property (nonatomic) NSArray *currentGameSequence;
 @property (assign, nonatomic) NSUInteger currentPlayerTurn;
 @property (assign, nonatomic) BOOL isBlockingButtons;
+@property (weak, nonatomic) id<TitoSaysGameDelegate> delegate;
 @end
 
 @implementation TitoSaysGameInterfaceController
 
 
-// Game Sequence Turn Count Constant
+// Game Sequence Turn Count and Flash Duration Constants
 const static int kGameTurnCount = 1000;
+const static float kFlashDuration = 0.4;
 
 
 #pragma mark - Interface Lifecycle
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
+    self.delegate = context;
     // Configure interface objects here.
 }
 
@@ -78,6 +80,7 @@ const static int kGameTurnCount = 1000;
     for (NSUInteger i=0; i < [self.userInput count]; i++) {
         if (![self.userInput[i] isEqual:self.currentGameSequence[i]]) {
             // no match! - end game
+            [self endGame];
             return;
         }
     }
@@ -87,12 +90,23 @@ const static int kGameTurnCount = 1000;
     }
 }
 
+
 - (void)startMachineTurn {
     self.currentPlayerTurn++;
     self.isBlockingButtons = YES;
     [self.notificationLabel setText:@"Watch to repeat"];
-    [self playSeriesForTurn:self.currentPlayerTurn];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self playSeriesForTurn:self.currentPlayerTurn];
+    });
 }
+
+
+- (void)startPlayerTurn {
+    [self.notificationLabel setText:@"Your turn"];
+    self.userInput = [NSMutableArray array];
+    self.isBlockingButtons = NO;
+}
+
 
 #pragma mark - Game Sequence
 
@@ -134,20 +148,20 @@ const static int kGameTurnCount = 1000;
 
 #pragma mark - Flash Quadrant
 
-- (void)flashQuadrantWithIndex:(NSUInteger)quadrantIndex {
+- (void)flashQuadrantWithIndex:(NSUInteger)quadrantIndex withDuration:(float)duration {
     UIColor *startingColor = [[self quadrantColors] objectAtIndex:quadrantIndex];
     UIColor *flashColor = [[self quadrantFlashColors] objectAtIndex:quadrantIndex];
     
     WKInterfaceButton *buttonToFlash = [[self gameButtons] objectAtIndex:quadrantIndex];
     [buttonToFlash setBackgroundColor:flashColor];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [buttonToFlash setBackgroundColor:startingColor];
     });
 }
 
 
-#pragma mark - Game Start Mechanic
+#pragma mark - Game Start and End Mechanics
 
 - (void)startGame {
     self.currentPlayerTurn = 1;
@@ -159,8 +173,18 @@ const static int kGameTurnCount = 1000;
         [self.notificationLabel setText:@"Set"];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.notificationLabel setText:@"Go!"];
-            [self startMachineTurn];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self playSeriesForTurn:self.currentPlayerTurn];
+            });
         });
+    });
+}
+
+
+- (void)endGame {
+    [self.notificationLabel setText:@"Game Over"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.delegate didEndGameWithScore:self.currentPlayerTurn];
     });
 }
 
@@ -182,17 +206,10 @@ const static int kGameTurnCount = 1000;
     }
     
     NSNumber *currentQuadrant = [self.currentGameSequence objectAtIndex:startIndex];
-    [self flashQuadrantWithIndex:[currentQuadrant unsignedIntegerValue]];
+    [self flashQuadrantWithIndex:[currentQuadrant unsignedIntegerValue] withDuration:kFlashDuration];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self playSeriesFromIndex:startIndex+1 toIndex:finishIndex];
     });
-}
-
-
-- (void)startPlayerTurn {
-    [self.notificationLabel setText:@"Your turn"];
-    self.userInput = [NSMutableArray array];
-    self.isBlockingButtons = NO;
 }
 
 @end
